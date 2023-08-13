@@ -1,0 +1,277 @@
+body{
+    background-color: #f3f3f3;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* -----------header------------- */
+
+
+header{
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+}
+body>header>p{
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+#bankist-logo{
+    height: 100%;
+}
+
+body>header>form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:20%;
+}
+
+body>header>form>input{
+    border-style: none;
+    font-family: inherit;
+    padding: .8rem .5rem  ;
+    width: 35%;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+}
+input{
+    text-align: center;
+}
+input:focus{
+    outline: none;
+}
+body>header>form>input:focus{
+    border: solid 1px #ccc;
+}
+
+body>header>form>input::placeholder{
+    color:#bbb;
+}
+#login,#sort{
+    border: none;
+    transition: all 0.3s;
+}
+#login{
+    font-size: 2.2rem;
+}
+button{
+    cursor: pointer;
+}
+#login:hover,
+#login:focus,
+#sort:hover,
+#sort:focus{
+    color: #777;
+}
+
+
+/* ------------main-------------- */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin: 5vh 17vw 0 17vw;
+    opacity: 0;
+    transition: all 1s;
+}
+main>header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+main>header>div>h1{
+    margin: 0;
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+main>header>div>p{
+    margin: 0;
+    font-size: 1.4rem;
+    color:#888;
+}
+#current-balance{
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin-top: .6rem;
+}
+#content{
+    margin-top: 4rem;
+    height: 68vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* --------passbook----------- */
+
+#passbook{
+    width: 55%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: scroll;
+}
+#passbook>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+    font-size: 1.7rem;
+    border-bottom: .2rem solid #eee;
+}
+.type{
+    font-size: 1.2rem;
+    border-radius: 10rem;
+    color: #fff;
+    font-weight: 510;
+    padding: .2rem 1rem;
+
+}
+.type-deposit{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.type-withdrawal{
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+/* ---------------actions----------- */
+
+#actions{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#actions>div{
+    height: 31%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0 4rem;
+}
+#actions>div>form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#request-loan>form{
+    justify-content: start !important;
+}
+#request-loan>form>div{
+    margin-right: 2rem;
+}
+#actions>div>form>div>p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0.3rem;
+}
+#actions>div>form>div{
+    width: 37%;
+}
+#actions>div>form>div>input{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    border-radius: 7px;
+    border-style: none;
+    transition: all .5s;
+}
+#actions>div>form>div>input:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);  
+}
+
+#actions>div>form button{
+    height: 2.8rem;
+    width: 15%;
+    border-radius: 7px;
+    border-style: none;
+}
+#transfer-money{
+    background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+#transfer-money input{
+    background-color: #ffd968;
+}
+
+#request-loan{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+#request-loan input{
+    background-color: #abe2a8;
+}
+
+#close-account{
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+#close-account input{
+    background-color: #f9909e;
+}
+
+#actions h2{
+    font-size: 1.8rem;
+}
+
+
+/* -----------footer--------------- */
+
+
+#footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+#stats{
+    width: 55%;
+}
+#footer>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#stats>div{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 28%;
+}
+#stats h2{
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight:500 ;
+}
+#money-in h2, #interest h2{
+    color: #66c873;
+}
+#money-out h2{
+    color: #f5465d;
+}
+
+#stats p{
+    font-size: 1.2rem;
+}
+#logout-timer{
+    font-size: 1.3rem;
+}
+#timer{
+    font-weight: bold;
+}
